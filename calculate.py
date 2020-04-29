@@ -17,6 +17,7 @@ def compositions_from_empirical(elements: list, amounts: list):
     total_molar_masses = [table[a]["atomic_mass"]*b for a,b in zip(elements, amounts)]
     return elements, ([round(x/sum(total_molar_masses)*100, 1) for x in total_molar_masses])
 
+#TODO: Finish molecular_formula class
 def molecular_formula(elements: list, amounts: list, experimental_mass):
     
     return
